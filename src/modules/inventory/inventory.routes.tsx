@@ -3,7 +3,7 @@ import ProductList from "./components/productList";
 import ProductDetail from "./components/productDetail";
 
 const routes: acidRoute = {
-  path: "/products",
+  path: "/",
   component: ProductList,
   routes: [
     {

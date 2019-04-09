@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 
-function RouteWithSubRoutes(route: any) {
+export function RouteWithSubRoutes(route: any) {
   return (
     <Route
       path={route.path}

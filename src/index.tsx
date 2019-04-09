@@ -5,7 +5,7 @@ import configureStore from './store';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import RouteConfig from './routes';
-import buildRootReducer from './reducers/rootReducer';
+import buildRootReducer from './rootReducer';
 
 import appModules from './modules';
 

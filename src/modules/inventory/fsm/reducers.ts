@@ -1,12 +1,12 @@
-export default (state = {}, action: any) => {
-  console.log('reducing');
-  
+const inventoryReducer = (state = {}, action: any) => {
   switch (action.type) {
-   case 'SIMPLE_ACTION':
-    return {
-     result: action.payload
-    }
-   default:
-    return state
+    case 'SIMPLE_ACTION':
+      return {
+        result: action.payload
+      }
+    default:
+      return state
   }
- }
+}
+
+export default inventoryReducer;

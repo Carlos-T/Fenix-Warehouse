@@ -1,13 +1,10 @@
 import { combineReducers } from 'redux';
 
 const buildRootReducer = (reducers: any[]) => {
-  const r = reducers.reduce((p, c) => {
-    c[p.name] = p;
-    return c;
-  }, {});
-  return combineReducers({
-    r
-  })
+  return combineReducers(reducers.reduce((p, c) => {
+    p[c.name] = c;
+    return p;
+  }, {}))
 }
 
 export default buildRootReducer;

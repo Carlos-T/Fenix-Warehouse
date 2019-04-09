@@ -16,7 +16,7 @@ class productDetail extends Component<any, any> {
       <button onClick={(e: React.MouseEvent) => this.simpleAction(e)}>Test</button>
       <pre>
         {
-          JSON.stringify(this.props)
+          JSON.stringify(this.props.inventoryReducer)
         }
       </pre>
     </div>;
